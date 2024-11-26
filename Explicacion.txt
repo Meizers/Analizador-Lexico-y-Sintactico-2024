@@ -1,0 +1,19 @@
+Este Proyecto esta preparado para la 2da entrega (analizador sintactico), si bien tiene el lexico.flex no esta preparado para la primera entrega
+ya que faltaria la muestra de pantalla en la vista en ves de los return de los tokens.
+En la carpeta out/artifacts esta el ejecutable (.jar).
+El java_cup.runtime.jar es la biblioteca que tiene que importar el lexico.
+Todo ya esta funcional y compilado, aca dejo como compilar el lexico y sintactico por si lo necesitan.
+
+COMPILACION LEXICO.FLEX
+Para compilar el lexico hay que navegar por el cmd hasta el proyecto y ejecutar el siguiente comando
+java -jar jflex-full-1.0.1.jar Lexico.flex
+
+COMPILACION SINTACTICO.CUP
+Para compilar el Sintactico hay que navegar por el cmd hasta el proyecto y ejecutar el siguiente comando
+java -jar java-cup-11.jar -expect 14 Sintactico.cup
+(el -expect 14 es por que por alguna razon genera warning, y a cierta cantidad se detiene el proceso de compilado.
+Entonces con -expect 14 lo que decimos es que esperamos 14 warning (aunque son 9) )
+
+TABLA DE SIMBOLOS
+La tabla de simbolo se actualiza en tiempo real, pero falto en el proyecto que no se repita las constantes con el mismo valor
+
